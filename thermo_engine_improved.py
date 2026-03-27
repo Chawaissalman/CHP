@@ -1,24 +1,8 @@
 """
-CHP Steenwijk — Improved Thermodynamic + Plant Performance Engine
+CHP Steenwijk —  Thermodynamic + Plant Performance
 =================================================================
-A more realistic plant-performance model for the MAN MARC 1-C10 biomass CHP.
 
-What is improved vs the earlier screening model
------------------------------------------------
-1. Scenario-specific condenser pressure support (used for S4 summer backpressure)
-2. Part-load corrected HP/LP/expander isentropic efficiencies
-3. Gross power and net export split (gross power minus auxiliary loads)
-4. Corrected useful-heat calculation for LP-expander scenarios using expander outlet enthalpy
-5. Scenario-aware auxiliary load model for flue-gas fan, condenser fans, biomass handling,
-   heat-system auxiliaries, and expander skid load
-
-Important note
---------------
-This is materially more realistic than the original thermodynamic screening model,
-but it is still not a full plant digital twin. Exact calibration of auxiliaries,
-heat-system usefulness, and fuel-side performance still depends on site metering.
 """
-
 from __future__ import annotations
 
 import json
